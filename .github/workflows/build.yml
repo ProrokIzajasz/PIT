@@ -10,3 +10,4 @@ jobs:
           dotnet-version: 8.0.x
       - run: dotnet restore PIT.csproj
       - run: dotnet build PIT.csproj -c Release --no-restore
+      - run: dotnet test PIT.Tests/PIT.Tests.csproj -c Release

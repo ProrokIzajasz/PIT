@@ -8,6 +8,8 @@ A Windows desktop tool for creating, recording and running reusable mouse and ke
 
 ![PIT macro and scheme editor](docs/images/pit-overview.png)
 
+![PIT profile and macro workspace](docs/images/pit-profile-editor.png)
+
 Typical flow: create a profile, record or add macro steps, combine macros into a reusable
 scheme, assign an optional mouse trigger, and start or stop execution from the main window.
 
@@ -38,3 +40,13 @@ Profiles are stored locally and can be exported for transfer to another device. 
 Functional prototype. Macro recording, editing and playback work, while advanced visual recognition and game-specific automation remain experimental and are intentionally not presented as finished features.
 
 > Use automation responsibly and only where it is permitted.
+
+## Tests
+
+```powershell
+dotnet test PIT.Tests/PIT.Tests.csproj
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).

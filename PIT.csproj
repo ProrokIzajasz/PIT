@@ -14,4 +14,7 @@
 		<ApplicationDefinition Include="App\App.xaml" />
 	</ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="PIT.Tests\**\*.cs" />
+  </ItemGroup>
 </Project>
