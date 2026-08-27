@@ -2,6 +2,8 @@
 
 [![Build](https://github.com/ProrokIzajasz/PIT/actions/workflows/build.yml/badge.svg)](https://github.com/ProrokIzajasz/PIT/actions/workflows/build.yml)
 
+[Download the latest Windows release](https://github.com/ProrokIzajasz/PIT/releases/latest)
+
 A Windows desktop tool for creating, recording and running reusable mouse and keyboard automation.
 
 ## Demo
