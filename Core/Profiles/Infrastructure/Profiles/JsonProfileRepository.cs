@@ -20,8 +20,13 @@ public sealed class JsonProfileRepository : IProfileRepository
 
     public JsonProfileRepository()
     {
-        var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        _profilesDirectory = Path.Combine(appData, "PIT", "Profiles");
+        var dataDirectory = Environment.GetEnvironmentVariable("PIT_DATA_DIRECTORY");
+        _profilesDirectory = string.IsNullOrWhiteSpace(dataDirectory)
+            ? Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "PIT",
+                "Profiles")
+            : Path.Combine(dataDirectory, "Profiles");
 
         Directory.CreateDirectory(_profilesDirectory);
     }

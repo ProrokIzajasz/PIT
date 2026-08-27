@@ -4,6 +4,13 @@
 
 A Windows desktop tool for creating, recording and running reusable mouse and keyboard automation.
 
+## Demo
+
+![PIT macro and scheme editor](docs/images/pit-overview.png)
+
+Typical flow: create a profile, record or add macro steps, combine macros into a reusable
+scheme, assign an optional mouse trigger, and start or stop execution from the main window.
+
 ## Highlights
 
 - macro recording and step editing
